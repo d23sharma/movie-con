@@ -1,6 +1,8 @@
-.main-heading{
-    font-size: 3.2rem;
-    background-color: rgb(26, 26, 68);
-    color: #fff;
-    padding: 15px 0;
+.header {
+    width: 100vw;
+    height: 15vh;
+    background-color: aliceblue;
+    text-align: center;
+    line-height: 15vh;
+    font-size: 3rem;
 }

@@ -1,15 +1,20 @@
 import './App.css';
 import Header from './Components/Header';
 import MovieCard from './Components/MovieCard';
+import Practice from './Components/Practice';
+
+
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      <Header/>
 
-      <div className='main-section'>
+      <div className='movie-section'>
         <MovieCard />
       </div>
+
+      <Practice/>
     </div>
   );
 }

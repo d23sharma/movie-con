@@ -3,8 +3,8 @@ import './Header.css'
 
 const Header = () => {
   return (
-    <div className='main-heading'>
-      Movie-con
+    <div className='header'>
+        Movie-con
     </div>
   )
 }

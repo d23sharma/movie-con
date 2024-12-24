@@ -1,0 +1,76 @@
+.practice {
+    width: 100vw;
+    height: 100vh;
+    background-color: #d5d5d5;
+}
+
+.practice-container {
+    width: 95vw;
+    height: 95vh;
+    background-color: #fff;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 10vh 1fr 1fr 10vh;
+    grid-template-areas: 
+    "nav nav nav nav"
+    "sidebar main main main"
+    "sidebar content1 content2 content3"
+    "sidebar footer footer footer";
+    text-align: center;
+    gap: .2rem;
+}
+
+.header1 {
+    background-color: rgb(234, 147, 188);
+    grid-area: nav;
+}
+
+
+
+/* .cards {
+    border: 1px solid black;
+    margin: 1rem;
+    padding: 1rem
+} */
+
+.sidebar {
+    background-color: rgb(120, 200, 230);
+    grid-area: sidebar;
+}
+
+.main {
+    background-color: rgb(242, 176, 146);
+    grid-area: main;
+}
+#content1 {
+    background-color: rgb(172, 146, 242);
+    grid-area: content1;
+}
+#content2 {
+    background-color: rgb(172, 146, 242);
+    grid-area: content2;
+}
+#content3 {
+    background-color: rgb(172, 146, 242);
+    grid-area: content3;
+}
+.footer {
+    background-color: rgb(97, 158, 223);
+    grid-area: footer;
+}
+
+@media (max-width: 575px) {
+    .practice-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1.8rem 300px 200px 200px 200px 200px 100px;
+        grid-template-areas: 
+            "nav"
+            "main"
+            "sidebar"
+            "content1"
+            "content2"
+            "content3"
+            "footer";
+    }
+}
